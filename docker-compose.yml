@@ -10,10 +10,6 @@ services:
 
   db:
     image: postgres
-    container_name: postgres
-    build: database
-    volumes:
-      - dataset:/var/lib/postgresql/shared-data/
     restart: always
     environment:
       POSTGRES_USER: admin
